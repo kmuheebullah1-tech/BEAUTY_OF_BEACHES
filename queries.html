@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF6B4A" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>Queries & FAQs — BeautyOfBeaches</title>
+  <meta name="description" content="Find comprehensive answers to frequently asked travel queries about best seasons, sleeper waves, permits, kid-friendly beaches, and packing essentials." />
+  <meta property="og:title" content="Queries & FAQs — BeautyOfBeaches" />
+  <meta property="og:description" content="Find comprehensive answers to frequently asked travel queries about best seasons, sleeper waves, permits, kid-friendly beaches, and packing essentials." />
+
+  <!-- Google Fonts: Playfair Display & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Tropical Sunset Theme Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bob-navbar">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand bob-logo" href="index.html" aria-label="Beauty Of Beaches - Home">
+        <img src="images/logo.png" alt="Beauty Of Beaches logo" class="bob-logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars fs-4"></i></button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-beaches" role="button" data-bs-toggle="dropdown" aria-expanded="false">Beaches</a><ul class="dropdown-menu bob-dropdown" aria-labelledby="dd-beaches"><li><a class="dropdown-item" href="east-beaches.html">East Beaches</a></li><li><a class="dropdown-item" href="west-beaches.html">West Beaches</a></li><li><a class="dropdown-item" href="north-beaches.html">North Beaches</a></li><li><a class="dropdown-item" href="south-beaches.html">South Beaches</a></li></ul></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-huts" role="button" data-bs-toggle="dropdown" aria-expanded="false">Huts</a><ul class="dropdown-menu bob-dropdown" aria-labelledby="dd-huts"><li><a class="dropdown-item" href="old-huts.html">Old Huts</a></li><li><a class="dropdown-item" href="normal-huts.html">Normal Huts</a></li><li><a class="dropdown-item" href="luxury-huts.html">Luxury Huts</a></li></ul></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" id="dd-more" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a><ul class="dropdown-menu bob-dropdown" aria-labelledby="dd-more"><li><a class="dropdown-item active" href="queries.html">Queries</a></li><li><a class="dropdown-item" href="feedback.html">Feedback</a></li><li><a class="dropdown-item" href="sitemap.html">Sitemap</a></li></ul></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="page-hero" style="background-image: url('images/gallery/g06.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content px-lg-5 text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="hero-badge">
+            <i class="fa-solid fa-circle-question text-gold"></i>
+            Traveler Helpdesk & Knowledge Base
+          </div>
+          <h1 class="page-hero-title">
+            Travel <span class="text-gradient-warm">Queries & FAQs</span>
+          </h1>
+          <p class="hero-lead mx-auto mb-0">
+            Have questions about best seasons, rip currents, kid-friendly lagoons, permits, or camera gear? Find instant expert answers to common beach queries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Queries Section with Search Filter -->
+  <main class="py-5 bg-warm-cream">
+    <div class="container px-lg-5">
+      <!-- Search Input Card -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-7 text-center">
+          <span class="section-kicker"><i class="fa-solid fa-magnifying-glass"></i> Live Search</span>
+          <h2 class="section-title">Search Travel Queries</h2>
+          <p class="section-desc mx-auto mb-4">
+            Type any keyword below to filter our answers instantly (e.g., safety, season, kids, permit, camera, packing).
+          </p>
+
+          <div class="input-group input-group-lg shadow-sm">
+            <span class="input-group-text bg-white border-end-0 text-coral">
+              <i class="fa-solid fa-search"></i>
+            </span>
+            <input type="text" id="faq-search-input" class="form-control border-start-0 bg-white" placeholder="Search questions (e.g., safety, permit, best time, packing)..." aria-label="Search FAQs">
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5 align-items-start">
+        <!-- FAQ Accordion -->
+        <div class="col-lg-8">
+          <div class="bob-accordion accordion" id="queriesAccordion">
+            
+            <!-- 1. Best Time to Visit -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="fa-solid fa-calendar-check text-coral me-3"></i> What is the best time of year to visit tropical vs. northern beaches?
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#queriesAccordion">
+                <div class="accordion-body">
+                  For tropical East and South zones (like Thailand, Philippines, Andaman, and Australia's Whitsundays), the premier window runs from <strong>November to April</strong>, coinciding with the dry northeast monsoon and calmest seas. In contrast, for Northern coastal destinations such as Oregon or Iceland, <strong>June through September</strong> delivers warmer breezes, accessible cliff trails, and 24-hour midnight sun illumination. For Pakistan’s Manora and Clifton shores in Karachi, <strong>October through March</strong> provides pleasant, cool coastal breezes.
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Beach Safety -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa-solid fa-triangle-exclamation text-terracotta me-3"></i> What beach safety precautions should I take regarding undertows and sneaker waves?
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#queriesAccordion">
+                <div class="accordion-body">
+                  Safety is paramount:
+                  <ul class="mb-0 mt-2">
+                    <li><strong>At Northern shores (Iceland, Pacific Northwest):</strong> Never turn your back on the Atlantic foam line. Sneaker waves emerge without warning and can surge 30+ meters higher up the shore.</li>
+                    <li><strong>At open surf beaches (Bondi, Clifton):</strong> Swim only between designated lifeguard flags. If caught in a rip current, remain calm and swim parallel to the shoreline rather than battling directly against the incoming swell.</li>
+                    <li><strong>Monsoon months (June–August):</strong> Avoid deep swimming in the northern Arabian Sea during high summer swells.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Travel Preparation & Permits -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-ticket text-coral me-3"></i> Do I need permits or advance reservations for protected marine sanctuaries?
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#queriesAccordion">
+                <div class="accordion-body">
+                  Most public beaches across the four zones are freely accessible. However, several highly protected marine reserves strictly enforce daily visitor quotas:
+                  <ul class="mb-0 mt-2">
+                    <li><strong>Baía do Sancho (Fernando de Noronha, Brazil):</strong> Requires an environmental preservation tax and pre-booked park access card.</li>
+                    <li><strong>Maya Bay (Phi Phi Leh, Thailand):</strong> Requires a national park entry fee and adheres to periodic seasonal conservation closures.</li>
+                    <li><strong>Whitehaven Beach:</strong> Regulated by Queensland Parks; day catamarans must use designated ecological moorings.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Family-Friendly Destinations -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <i class="fa-solid fa-child text-coral me-3"></i> Which beaches are safest and best suited for young families and children?
+                </button>
+              </h3>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#queriesAccordion">
+                <div class="accordion-body">
+                  For young children and relaxed wading, beaches protected by outer barrier reefs are unmatched. <strong>Anse Source d'Argent</strong> in Seychelles and <strong>Matira Beach</strong> in Bora Bora are world-renowned for shallow, waist-deep lagoons that extend hundreds of yards with soft sand and virtually no breakers. For family promenades with camel rides, buggy cruises, and beachside restaurants, <strong>Clifton Sea View and Manora Beach in Karachi</strong> offer lively, family-oriented entertainment.
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Photography Tips -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <i class="fa-solid fa-camera text-terracotta me-3"></i> What are the top coastal photography tips for sunset and golden hour captures?
+                </button>
+              </h3>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#queriesAccordion">
+                <div class="accordion-body">
+                  Arrive 45 minutes before scheduled sunset to set up during the initial golden glow and remain for the "blue hour" 20 minutes after the sun dips below the horizon. Use a circular polarizing filter (CPL) to cut sea surface glare and reveal underwater coral colors. Note that flying recreational drones over national parks (like Olympic National Park, Iceland reserves, or Phi Phi Leh) is strictly prohibited without specialized permits.
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Beach Activities -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <i class="fa-solid fa-person-swimming text-coral me-3"></i> What water sports and activities can I enjoy across each zone?
+                </button>
+              </h3>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#queriesAccordion">
+                <div class="accordion-body">
+                  Activities vary by regional geography:
+                  <ul class="mb-0 mt-2">
+                    <li><strong>North:</strong> Geological cliff hikes, puffin birdwatching, tide pooling, and wild camping under the midnight sun.</li>
+                    <li><strong>South:</strong> Catamaran sailing, sea turtle snorkeling, dolphin viewing, and camel rides.</li>
+                    <li><strong>East:</strong> Paraw sunset sailing, scuba diving along karst walls, and stand-up paddleboarding in calm shallows.</li>
+                    <li><strong>West:</strong> Sea cave kayaking in the Algarve, shipwreck exploration in Greece, and cenote diving in Mexico.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Packing Essentials -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  <i class="fa-solid fa-suitcase-rolling text-coral me-3"></i> What essentials should I pack for a multi-day beach expedition?
+                </button>
+              </h3>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#queriesAccordion">
+                <div class="accordion-body">
+                  Key items include:
+                  <ul class="mb-0 mt-2">
+                    <li><strong>Reef-Safe Sunscreen:</strong> Non-nano Zinc Oxide or Titanium Dioxide formulas that do not contain oxybenzone or octinoxate.</li>
+                    <li><strong>Dry Bag (10L–20L):</strong> Essential for protecting phones and cameras during boat transfers and kayak excursions.</li>
+                    <li><strong>Water Shoes or Neoprene Booties:</strong> Protect feet when exploring volcanic shale, basalt columns, or rocky tidal shelves.</li>
+                    <li><strong>Polarized UV400 Sunglasses:</strong> Protect your retinas from intense water reflections.</li>
+                    <li><strong>Lycra Rashguard:</strong> Provides UPF 50+ sun protection and defense against jellyfish stingers.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Destination Selection -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  <i class="fa-solid fa-compass text-terracotta me-3"></i> How do I choose between the North, South, East, and West beach zones?
+                </button>
+              </h3>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#queriesAccordion">
+                <div class="accordion-body">
+                  If you crave dramatic sea cliffs, basalt columns, and moody atmospheric solitude, choose <strong>North Beaches</strong>. If you desire pure powdery white silica sands, warm swimming, and vibrant marine life, head to <strong>South Beaches</strong>. For tropical jungle settings, limestone karst peaks, and island hopping, explore <strong>East Beaches</strong>. For historic shipwrecks, archaeological ruins, and golden sea arches, explore <strong>West Beaches</strong>.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Ask a Specific Query Form -->
+        <div class="col-lg-4">
+          <div class="p-4 p-md-5 bg-white rounded-4 border border-light shadow-sm">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="feature-icon-wrap mb-0" style="width: 48px; height: 48px; font-size: 1.3rem;">
+                <i class="fa-solid fa-headset text-coral"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-0 text-cocoa">Ask a Beach Query</h5>
+                <small class="text-cocoa-muted">In-browser assistance</small>
+              </div>
+            </div>
+
+            <p class="small text-cocoa-muted mb-3">
+              Don't see your specific question above? Submit your travel query below for automated local browser advisory.
+            </p>
+
+            <form id="user-query-form">
+              <div class="mb-3">
+                <label for="user-zone" class="bob-form-label">Zone of Interest</label>
+                <select id="user-zone" class="form-select">
+                  <option value="All">All Compass Zones</option>
+                  <option value="North">North Beaches</option>
+                  <option value="South">South Beaches</option>
+                  <option value="East">East Beaches</option>
+                  <option value="West">West Beaches</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="user-question" class="bob-form-label">Your Travel Question</label>
+                <textarea id="user-question" class="form-control" rows="3" placeholder="e.g., Can I take a boat from Keamari to Manora Beach at night?" required></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="user-email" class="bob-form-label">Email (Optional)</label>
+                <input type="email" id="user-email" class="form-control" placeholder="traveler@example.com">
+              </div>
+
+              <button type="submit" class="btn btn-coral-primary w-100">
+                <i class="fa-solid fa-paper-plane me-2"></i>Submit Travel Query
+              </button>
+            </form>
+
+            <div id="query-response-alert" class="mt-3 d-none"></div>
+
+            <hr class="my-4">
+
+            <div class="text-center">
+              <p class="small text-cocoa-muted mb-2">Need direct partnership or customized expedition details?</p>
+              <a href="contact.html" class="btn btn-sand btn-sm">
+                <i class="fa-solid fa-envelope me-1"></i>Visit Contact Us Page
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Back To Top Button -->
+  <button id="back-to-top-btn" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Consistent Footer -->
+  <footer class="bob-footer">
+    <div class="container px-lg-5">
+      <div class="row g-4">
+        <!-- Brand Summary -->
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <a class="bob-logo mb-3 d-inline-flex" href="index.html" aria-label="Beauty Of Beaches - Home">
+            <img src="images/logo.png" alt="Beauty Of Beaches logo" class="bob-logo-img footer-logo">
+          </a>
+          <p class="bob-footer-desc">
+            BeautyOfBeaches is a premier global beach tourism portal dedicated to showcasing the planet's most spectacular shorelines across the North, South, East, and West compass zones.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="bob-footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="queries.html"><i class="fa-solid fa-chevron-right"></i> Queries &amp; FAQs</a></li>
+            <li><a href="feedback.html"><i class="fa-solid fa-chevron-right"></i> Feedback</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+            <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap</a></li>
+          </ul>
+        </div>
+
+        <!-- Beach Zones & Huts -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Explore</h5>
+          <ul class="bob-footer-links">
+            <li><a href="north-beaches.html"><i class="fa-solid fa-compass"></i> North Beaches</a></li>
+            <li><a href="south-beaches.html"><i class="fa-solid fa-sun"></i> South Beaches</a></li>
+            <li><a href="east-beaches.html"><i class="fa-solid fa-tree"></i> East Beaches</a></li>
+            <li><a href="west-beaches.html"><i class="fa-solid fa-water"></i> West Beaches</a></li>
+            <li><a href="old-huts.html"><i class="fa-solid fa-house-chimney"></i> Old Huts</a></li>
+            <li><a href="normal-huts.html"><i class="fa-solid fa-umbrella-beach"></i> Normal Huts</a></li>
+            <li><a href="luxury-huts.html"><i class="fa-solid fa-gem"></i> Luxury Huts</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information (sample details) -->
+        <div class="col-lg-4">
+          <h5>Contact Bureau</h5>
+          <p class="small mb-3 footer-note">Sample inquiry details for demonstration:</p>
+          <div class="footer-contact-row"><i class="fa-solid fa-location-dot"></i><div>Coastal Horizon Tower, Sunset Avenue, Seaside District (Sample Location)</div></div>
+          <div class="footer-contact-row"><i class="fa-solid fa-phone"></i><div>+1 (800) 555-COAST (Sample Helpline)</div></div>
+          <div class="footer-contact-row mb-3"><i class="fa-solid fa-envelope"></i><div>contact@beautyofbeaches.sample</div></div>
+          <a href="contact.html" class="btn btn-sm footer-btn">Send In-Browser Message</a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>&copy; 2026 <strong>BeautyOfBeaches</strong>. All rights reserved.</div>
+        <div class="d-flex flex-wrap gap-3 align-items-center footer-bottom-links">
+          <a href="sitemap.html">Sitemap</a>
+          <a href="queries.html">Travel FAQs</a>
+          <a href="feedback.html">Reviews</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

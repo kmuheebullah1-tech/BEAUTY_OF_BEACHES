@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF6B4A" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>Feedback — BeautyOfBeaches</title>
+  <meta name="description" content="Share your beach travel reviews, rate shore cleanliness, water clarity, and scenery, and assist fellow global wanderers in discovering seaside paradise." />
+  <meta property="og:title" content="Feedback — BeautyOfBeaches" />
+  <meta property="og:description" content="Share your beach travel reviews, rate shore cleanliness, water clarity, and scenery, and assist fellow global wanderers in discovering seaside paradise." />
+
+  <!-- Google Fonts: Playfair Display & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Tropical Sunset Theme Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bob-navbar">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand bob-logo" href="index.html" aria-label="Beauty Of Beaches - Home">
+        <img src="images/logo.png" alt="Beauty Of Beaches logo" class="bob-logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars fs-4"></i></button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-beaches" role="button" data-bs-toggle="dropdown" aria-expanded="false">Beaches</a><ul class="dropdown-menu bob-dropdown" aria-labelledby="dd-beaches"><li><a class="dropdown-item" href="east-beaches.html">East Beaches</a></li><li><a class="dropdown-item" href="west-beaches.html">West Beaches</a></li><li><a class="dropdown-item" href="north-beaches.html">North Beaches</a></li><li><a class="dropdown-item" href="south-beaches.html">South Beaches</a></li></ul></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-huts" role="button" data-bs-toggle="dropdown" aria-expanded="false">Huts</a><ul class="dropdown-menu bob-dropdown" aria-labelledby="dd-huts"><li><a class="dropdown-item" href="old-huts.html">Old Huts</a></li><li><a class="dropdown-item" href="normal-huts.html">Normal Huts</a></li><li><a class="dropdown-item" href="luxury-huts.html">Luxury Huts</a></li></ul></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" id="dd-more" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a><ul class="dropdown-menu bob-dropdown" aria-labelledby="dd-more"><li><a class="dropdown-item" href="queries.html">Queries</a></li><li><a class="dropdown-item active" href="feedback.html">Feedback</a></li><li><a class="dropdown-item" href="sitemap.html">Sitemap</a></li></ul></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="page-hero" style="background-image: url('images/gallery/g04.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content px-lg-5 text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="hero-badge">
+            <i class="fa-solid fa-comments text-gold"></i>
+            Traveler Voices & Ratings
+          </div>
+          <h1 class="page-hero-title">
+            We Value <span class="text-gradient-warm">Your Feedback</span>
+          </h1>
+          <p class="hero-lead mx-auto mb-0">
+            Share your coastal adventures, rate shore cleanliness, water clarity, and sunset vistas, and help fellow world wanderers discover serene seaside destinations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Feedback Form & Live Reviews Section -->
+  <main class="py-5 bg-warm-cream">
+    <div class="container px-lg-5">
+      <div class="row g-5">
+        <!-- Interactive Feedback Form -->
+        <div class="col-lg-6">
+          <div class="form-card">
+            <span class="section-kicker mb-2"><i class="fa-solid fa-pen-nib"></i> Traveler Review</span>
+            <h3 class="fw-bold text-cocoa mb-2">Leave Your Beach Feedback</h3>
+            <p class="text-cocoa-muted small mb-4">
+              Your feedback helps other travelers choose ideal destinations. Please note that this frontend website does not connect to a remote database; all submissions are processed and displayed in your browser for this session.
+            </p>
+
+            <div id="feedback-alert-box" class="d-none"></div>
+
+            <form id="feedback-submission-form" novalidate>
+              <!-- Star Rating Selector -->
+              <div class="mb-4">
+                <label class="bob-form-label d-block">Overall Beach Rating</label>
+                <div class="star-rating-box" id="star-rating-selector" aria-label="Select 1 to 5 stars">
+                  <i class="fa-solid fa-star active" data-rating="1" title="1 Star"></i>
+                  <i class="fa-solid fa-star active" data-rating="2" title="2 Stars"></i>
+                  <i class="fa-solid fa-star active" data-rating="3" title="3 Stars"></i>
+                  <i class="fa-solid fa-star active" data-rating="4" title="4 Stars"></i>
+                  <i class="fa-solid fa-star active" data-rating="5" title="5 Stars"></i>
+                </div>
+                <div id="rating-text-label" class="small text-terracotta fw-bold mt-1">
+                  5 Stars - Absolute Coastal Paradise!
+                </div>
+              </div>
+
+              <!-- Name & Email -->
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <label for="feedback-name" class="bob-form-label">Your Name <span class="text-danger">*</span></label>
+                  <input type="text" id="feedback-name" class="form-control" placeholder="e.g. Maya Lin" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="feedback-email" class="bob-form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" id="feedback-email" class="form-control" placeholder="maya@example.com" required>
+                </div>
+              </div>
+
+              <!-- Destination Visited & Category -->
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <label for="feedback-destination" class="bob-form-label">Destination Visited <span class="text-danger">*</span></label>
+                  <select id="feedback-destination" class="form-select" required>
+                    <!-- Populated dynamically via js/script.js -->
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label for="feedback-category" class="bob-form-label">Review Category</label>
+                  <select id="feedback-category" class="form-select">
+                    <option value="Scenery">Breathtaking Scenery</option>
+                    <option value="Cleanliness">Cleanliness & Preservation</option>
+                    <option value="Water Clarity">Water Clarity & Snorkeling</option>
+                    <option value="Safety">Safety & Lifeguards</option>
+                    <option value="Adventure">Adventure & Surfing</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Review Message -->
+              <div class="mb-4">
+                <label for="feedback-comment" class="bob-form-label">Your Experience & Tips <span class="text-danger">*</span></label>
+                <textarea id="feedback-comment" class="form-control" rows="4" placeholder="Tell us about the water temperature, sunset view, crowd level, or packing advice..." required></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-coral-primary w-100 py-3">
+                <i class="fa-solid fa-check me-2"></i>Submit Feedback
+              </button>
+            </form>
+
+            <div class="alert alert-info border-0 rounded-3 mt-4 p-3 small mb-0">
+              <i class="fa-solid fa-circle-info text-coral me-1"></i>
+              <strong>Browser-Only Notice:</strong> Since BeautyOfBeaches is a frontend-only application, reviews are validated and added immediately to the showcase below in memory. No data is sent to an external server.
+            </div>
+          </div>
+        </div>
+
+        <!-- Rating Overview & Guidance Sidebar -->
+        <div class="col-lg-6">
+          <div class="p-4 p-md-5 bg-white rounded-4 border border-light shadow-sm mb-4">
+            <span class="section-kicker mb-2"><i class="fa-solid fa-award"></i> Traveler Standards</span>
+            <h4 class="fw-bold text-cocoa mb-3">How We Assess Coastal Quality</h4>
+            <p class="text-cocoa-muted small mb-4">
+              Community reviews evaluate shores across five core pillars to help world wanderers choose the best beach for their specific needs:
+            </p>
+
+            <div class="d-flex align-items-center gap-3 mb-3 p-3 bg-warm-cream rounded-3">
+              <div class="feature-icon-wrap mb-0" style="width: 44px; height: 44px; font-size: 1.1rem;">
+                <i class="fa-solid fa-broom text-coral"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0 text-cocoa">Cleanliness & Litter-Free Sands</h6>
+                <small class="text-cocoa-muted">Absence of plastic pollution and presence of trash receptacles.</small>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 mb-3 p-3 bg-warm-cream rounded-3">
+              <div class="feature-icon-wrap mb-0" style="width: 44px; height: 44px; font-size: 1.1rem;">
+                <i class="fa-solid fa-water text-terracotta"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0 text-cocoa">Water Transparency</h6>
+                <small class="text-cocoa-muted">Visibility for snorkeling, swimming depth, and absence of strong undertows.</small>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 mb-3 p-3 bg-warm-cream rounded-3">
+              <div class="feature-icon-wrap mb-0" style="width: 44px; height: 44px; font-size: 1.1rem;">
+                <i class="fa-solid fa-shield-halved text-coral"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0 text-cocoa">Safety & Lifeguards</h6>
+                <small class="text-cocoa-muted">Availability of posted flag warnings and clear swimming perimeter zones.</small>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 p-3 bg-warm-cream rounded-3">
+              <div class="feature-icon-wrap mb-0" style="width: 44px; height: 44px; font-size: 1.1rem;">
+                <i class="fa-solid fa-sun text-gold"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0 text-cocoa">Sunset & Natural Ambiance</h6>
+                <small class="text-cocoa-muted">Scenic vistas, coastal breezes, and uncrowded evening tranquility.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Community Feedback Reviews Showcase -->
+      <div class="pt-5 mt-4">
+        <div class="section-header text-center mb-5">
+          <span class="section-kicker"><i class="fa-solid fa-quote-left"></i> Verified Travelers</span>
+          <h2 class="section-title">Recent Community Reviews</h2>
+          <p class="section-desc mx-auto">
+            Browse firsthand experiences submitted by travelers across our four compass zones.
+          </p>
+        </div>
+
+        <!-- Populated via js/script.js -->
+        <div id="community-reviews-grid" class="row">
+          <!-- Community review cards load here -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Back To Top Button -->
+  <button id="back-to-top-btn" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Consistent Footer -->
+  <footer class="bob-footer">
+    <div class="container px-lg-5">
+      <div class="row g-4">
+        <!-- Brand Summary -->
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <a class="bob-logo mb-3 d-inline-flex" href="index.html" aria-label="Beauty Of Beaches - Home">
+            <img src="images/logo.png" alt="Beauty Of Beaches logo" class="bob-logo-img footer-logo">
+          </a>
+          <p class="bob-footer-desc">
+            BeautyOfBeaches is a premier global beach tourism portal dedicated to showcasing the planet's most spectacular shorelines across the North, South, East, and West compass zones.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="bob-footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="queries.html"><i class="fa-solid fa-chevron-right"></i> Queries &amp; FAQs</a></li>
+            <li><a href="feedback.html"><i class="fa-solid fa-chevron-right"></i> Feedback</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+            <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap</a></li>
+          </ul>
+        </div>
+
+        <!-- Beach Zones & Huts -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Explore</h5>
+          <ul class="bob-footer-links">
+            <li><a href="north-beaches.html"><i class="fa-solid fa-compass"></i> North Beaches</a></li>
+            <li><a href="south-beaches.html"><i class="fa-solid fa-sun"></i> South Beaches</a></li>
+            <li><a href="east-beaches.html"><i class="fa-solid fa-tree"></i> East Beaches</a></li>
+            <li><a href="west-beaches.html"><i class="fa-solid fa-water"></i> West Beaches</a></li>
+            <li><a href="old-huts.html"><i class="fa-solid fa-house-chimney"></i> Old Huts</a></li>
+            <li><a href="normal-huts.html"><i class="fa-solid fa-umbrella-beach"></i> Normal Huts</a></li>
+            <li><a href="luxury-huts.html"><i class="fa-solid fa-gem"></i> Luxury Huts</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information (sample details) -->
+        <div class="col-lg-4">
+          <h5>Contact Bureau</h5>
+          <p class="small mb-3 footer-note">Sample inquiry details for demonstration:</p>
+          <div class="footer-contact-row"><i class="fa-solid fa-location-dot"></i><div>Coastal Horizon Tower, Sunset Avenue, Seaside District (Sample Location)</div></div>
+          <div class="footer-contact-row"><i class="fa-solid fa-phone"></i><div>+1 (800) 555-COAST (Sample Helpline)</div></div>
+          <div class="footer-contact-row mb-3"><i class="fa-solid fa-envelope"></i><div>contact@beautyofbeaches.sample</div></div>
+          <a href="contact.html" class="btn btn-sm footer-btn">Send In-Browser Message</a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>&copy; 2026 <strong>BeautyOfBeaches</strong>. All rights reserved.</div>
+        <div class="d-flex flex-wrap gap-3 align-items-center footer-bottom-links">
+          <a href="sitemap.html">Sitemap</a>
+          <a href="queries.html">Travel FAQs</a>
+          <a href="feedback.html">Reviews</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
