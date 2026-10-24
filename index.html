@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF6B4A" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>BeautyOfBeaches — Discover the World's Most Spectacular Shores</title>
+  <meta name="description" content="Explore breathtaking coastlines, golden sands, hidden tropical gems, and unforgettable seaside destinations around the world with BeautyOfBeaches." />
+  <meta property="og:title" content="BeautyOfBeaches — Discover the World's Most Spectacular Shores" />
+  <meta property="og:description" content="Explore breathtaking coastlines, golden sands, hidden tropical gems, and unforgettable seaside destinations around the world with BeautyOfBeaches." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Playfair Display & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Tropical Sunset Theme Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. STICKY NAVIGATION BAR
+       ========================================================================= -->
+  <nav class="navbar navbar-expand-lg sticky-top bob-navbar">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand bob-logo" href="index.html" aria-label="Beauty Of Beaches - Home">
+        <img src="images/logo.png" alt="Beauty Of Beaches logo" class="bob-logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars fs-4"></i></button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-beaches" role="button" data-bs-toggle="dropdown" aria-expanded="false">Beaches</a><ul class="dropdown-menu bob-dropdown" aria-labelledby="dd-beaches"><li><a class="dropdown-item" href="east-beaches.html">East Beaches</a></li><li><a class="dropdown-item" href="west-beaches.html">West Beaches</a></li><li><a class="dropdown-item" href="north-beaches.html">North Beaches</a></li><li><a class="dropdown-item" href="south-beaches.html">South Beaches</a></li></ul></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-huts" role="button" data-bs-toggle="dropdown" aria-expanded="false">Huts</a><ul class="dropdown-menu bob-dropdown" aria-labelledby="dd-huts"><li><a class="dropdown-item" href="old-huts.html">Old Huts</a></li><li><a class="dropdown-item" href="normal-huts.html">Normal Huts</a></li><li><a class="dropdown-item" href="luxury-huts.html">Luxury Huts</a></li></ul></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-more" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a><ul class="dropdown-menu bob-dropdown" aria-labelledby="dd-more"><li><a class="dropdown-item" href="queries.html">Queries</a></li><li><a class="dropdown-item" href="feedback.html">Feedback</a></li><li><a class="dropdown-item" href="sitemap.html">Sitemap</a></li></ul></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       2. FULL-WIDTH HERO SECTION
+       ========================================================================= -->
+  <header class="hero-full" style="background-image: url('images/home/beach1.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content px-lg-5 text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-9">
+          <div class="hero-badge">
+            <i class="fa-solid fa-sun text-gold"></i>
+            Worldwide Coastal Expeditions
+          </div>
+          <h1 class="hero-title">
+            Discover the <span class="text-gradient-warm">Beauty of Beaches</span>
+          </h1>
+          <p class="hero-lead mx-auto mb-4">
+            Explore breathtaking coastlines, golden sands, hidden tropical gems, and unforgettable seaside destinations around the world.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+            <a href="#featured-destinations" class="btn btn-coral-primary btn-lg px-4">
+              <i class="fa-solid fa-house-chimney me-2"></i>Explore Huts
+            </a>
+            <a href="gallery.html" class="btn btn-coral-outline btn-lg px-4">
+              <i class="fa-solid fa-images me-2"></i>View Gallery
+            </a>
+          </div>
+
+          <!-- Quick Metrics Banner -->
+          <div class="row g-3 justify-content-center pt-3 text-start">
+            <div class="col-6 col-md-3">
+              <div class="p-3 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-20 text-white">
+                <div class="fs-4 fw-bold text-gold">24+</div>
+                <div class="small text-cream">Iconic Coasts</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="p-3 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-20 text-white">
+                <div class="fs-4 fw-bold text-gold">4 Zones</div>
+                <div class="small text-cream">Global Directions</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="p-3 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-20 text-white">
+                <div class="fs-4 fw-bold text-gold">100%</div>
+                <div class="small text-cream">Eco-Tour Advice</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="p-3 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-20 text-white">
+                <div class="fs-4 fw-bold text-gold">4.9 / 5</div>
+                <div class="small text-cream">Traveler Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <a href="#welcome-section" class="scroll-indicator text-decoration-none">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </header>
+
+  <!-- =========================================================================
+       3. WELCOME TO BEAUTY OF BEACHES
+       ========================================================================= -->
+  <section id="welcome-section" class="py-5 bg-warm-cream">
+    <div class="container px-lg-5 py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-kicker">
+            <i class="fa-solid fa-heart text-coral"></i> Welcome to BeautyOfBeaches
+          </span>
+          <h2 class="section-title">Your Gateway to Pure Tropical Paradise & Coastal Tranquility</h2>
+          <p class="section-desc mb-4">
+            At <strong>BeautyOfBeaches</strong>, we believe every shoreline carries a distinct soul. From the tranquil camel rides along Pakistan’s Karachi shores to the silica wonders of Queensland, and from volcanic Arctic sands to Mediterranean shipwrecks, we guide travelers toward relaxing, unforgettable seaside adventures.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3 p-3 bg-white rounded-3 border border-light shadow-sm">
+                <div class="feature-icon-wrap mb-0" style="width: 48px; height: 48px; font-size: 1.25rem;">
+                  <i class="fa-solid fa-sun text-coral"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-0">Warm Tropical Vibe</h6>
+                  <small class="text-cocoa-muted">Sunset-inspired palette</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3 p-3 bg-white rounded-3 border border-light shadow-sm">
+                <div class="feature-icon-wrap mb-0" style="width: 48px; height: 48px; font-size: 1.25rem;">
+                  <i class="fa-solid fa-map-location-dot text-terracotta"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-0">4 Global Zones</h6>
+                  <small class="text-cocoa-muted">North, South, East, West</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn-coral-primary">
+            Learn About Our Story <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <div class="position-absolute bottom-0 start-0 m-4 p-3 bg-white rounded-3 shadow border border-light" style="max-width: 300px;">
+              <div class="d-flex align-items-center gap-2 text-gold mb-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="small text-cocoa fw-bold mb-0">"The world’s most comprehensive and relaxing beach directory."</p>
+              <small class="text-cocoa-muted">— International Coastal Review</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. EXPLORE BEACHES BY REGION (4 DEDICATED ZONE PAGES)
+       ========================================================================= -->
+  <section class="py-5 bg-white">
+    <div class="container px-lg-5 py-4">
+      <div class="section-header text-center mb-5">
+        <span class="section-kicker">
+          <i class="fa-solid fa-compass"></i> Regional Portals
+        </span>
+        <h2 class="section-title">Explore Beaches by Region</h2>
+        <p class="section-desc mx-auto">
+          Choose a direction to explore our dedicated regional guides. Each zone features curated destinations, travel tips, water conditions, and activities.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- North Zone Card -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="north-beaches.html" class="region-card">
+            <div class="region-card-overlay">
+              <span class="region-card-tag"><i class="fa-solid fa-compass me-1"></i> Zone North</span>
+              <h3 class="region-card-title">North Beaches</h3>
+              <p class="region-card-desc">From Manora Beach in Karachi to volcanic black sands of Iceland and Oregon.</p>
+              <span class="region-card-btn">Explore North <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <!-- South Zone Card -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="south-beaches.html" class="region-card">
+            <div class="region-card-overlay">
+              <span class="region-card-tag"><i class="fa-solid fa-sun me-1"></i> Zone South</span>
+              <h3 class="region-card-title">South Beaches</h3>
+              <p class="region-card-desc">Clifton Sea View in Karachi, Whitehaven silica sands, Seychelles & Brazil.</p>
+              <span class="region-card-btn">Explore South <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <!-- East Zone Card -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="east-beaches.html" class="region-card">
+            <div class="region-card-overlay">
+              <span class="region-card-tag"><i class="fa-solid fa-tree me-1"></i> Zone East</span>
+              <h3 class="region-card-title">East Beaches</h3>
+              <p class="region-card-desc">Maya Bay karst lagoons, Andaman paradise, Boracay & French Polynesia.</p>
+              <span class="region-card-btn">Explore East <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <!-- West Zone Card -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="west-beaches.html" class="region-card">
+            <div class="region-card-overlay">
+              <span class="region-card-tag"><i class="fa-solid fa-water me-1"></i> Zone West</span>
+              <h3 class="region-card-title">West Beaches</h3>
+              <p class="region-card-desc">Greek shipwreck cove, Algarve natural arches, Tulum & Turks and Caicos.</p>
+              <span class="region-card-btn">Explore West <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. POPULAR & FEATURED DESTINATIONS (ALL 4 ZONES)
+       ========================================================================= -->
+  <section id="featured-destinations" class="py-5 bg-warm-cream">
+    <div class="container px-lg-5 py-4">
+      <div class="section-header text-center mb-4"><span class="section-kicker"><i class="fa-solid fa-house-chimney text-gold"></i> Beach Huts</span>
+        <h2 class="section-title">Choose your beach hut</h2>
+        <p class="section-desc mx-auto">Old, Normal and Luxury: rates for all three categories are priced per day.</p></div>
+      <div class="row g-4 mb-5"><div class="col-md-4"><a href="old-huts.html" class="home-cat h-100"><img src="images/huts/old-yellow-door.jpg" alt="Old Huts" loading="lazy"><div class="home-cat-body"><h3><i class="fa-solid fa-house-chimney me-2"></i>Old Huts</h3><p>Simple & traditional: 4 huts</p><strong>From Rs 6,000 / day</strong></div></a></div><div class="col-md-4"><a href="normal-huts.html" class="home-cat h-100"><img src="images/huts/normal-night-stilt.jpg" alt="Normal Huts" loading="lazy"><div class="home-cat-body"><h3><i class="fa-solid fa-umbrella-beach me-2"></i>Normal Huts</h3><p>Comfortable standard: 4 huts</p><strong>From Rs 16,000 / day</strong></div></a></div><div class="col-md-4"><a href="luxury-huts.html" class="home-cat h-100"><img src="images/huts/lux-arabian-villa.jpg" alt="Luxury Huts" loading="lazy"><div class="home-cat-body"><h3><i class="fa-solid fa-gem me-2"></i>Luxury Huts</h3><p>Private villas: 7 huts</p><strong>From Rs 45,000 / day</strong></div></a></div></div>
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7"><img src="images/home/events-banner.jpg" alt="Luxury beach hut events in Karachi" class="img-fluid rounded-4 shadow-lg w-100"></div>
+        <div class="col-lg-5"><h3 class="section-title fs-2">Beach hut events</h3>
+          <p class="text-cocoa-muted">Corporate events, private celebrations, weddings and special gatherings, with a private beach, custom setup and premium service.</p>
+          <a href="luxury-huts.html" class="btn btn-coral-primary me-2">Luxury huts</a><a href="contact.html" class="btn btn-sand">Event enquiry</a></div>
+      </div>
+      <div class="home-strip mt-5"><img src="images/home/beach2.jpg" alt="Beach" loading="lazy"><img src="images/home/beach3.jpg" alt="Beach" loading="lazy"><img src="images/home/beach4.jpg" alt="Beach" loading="lazy"><img src="images/home/beach5.jpg" alt="Beach" loading="lazy"></div>
+      <div class="text-center mt-4"><div class="d-flex flex-wrap justify-content-center gap-2">
+        <a href="east-beaches.html" class="btn btn-sand">East</a><a href="west-beaches.html" class="btn btn-sand">West</a><a href="north-beaches.html" class="btn btn-sand">North</a><a href="south-beaches.html" class="btn btn-sand">South</a></div></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. WHY CHOOSE BEAUTY OF BEACHES
+       ========================================================================= -->
+  <section class="py-5 bg-white">
+    <div class="container px-lg-5 py-4">
+      <div class="section-header text-center mb-5">
+        <span class="section-kicker">
+          <i class="fa-solid fa-shield-halved"></i> Our Promise
+        </span>
+        <h2 class="section-title">Why Choose BeautyOfBeaches?</h2>
+        <p class="section-desc mx-auto">
+          We bring you genuine coastal intelligence, ethical marine travel advice, and breathtaking sunset spots.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h4 class="feature-title">Accurate Geographic Guides</h4>
+            <p class="feature-desc">Every destination is verified with authentic regional coordinates, clear directions, and local safety rules.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h4 class="feature-title">Eco & Marine Protection</h4>
+            <p class="feature-desc">We advocate for leave-no-trace tourism, coral-friendly sunscreens, and fragile barrier reef preservation.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-life-ring"></i>
+            </div>
+            <h4 class="feature-title">Coastal Safety Insights</h4>
+            <p class="feature-desc">Guidance on sleeper waves, monsoon swells, stinger seasons, and supervised swimming flag zones.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <h4 class="feature-title">Sunset & Photo Hotspots</h4>
+            <p class="feature-desc">Optimal golden hour timings, scenic viewpoints, and drone regulations for memorable seaside captures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. STUNNING BEACH HIGHLIGHTS (STATISTICS & FACTS)
+       ========================================================================= -->
+  <section class="py-5 bg-warm-cream">
+    <div class="container px-lg-5 py-4">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <span class="section-kicker">
+            <i class="fa-solid fa-chart-simple"></i> Coastal Highlights
+          </span>
+          <h2 class="section-title">Global Coasts in Numbers</h2>
+          <p class="section-desc mb-4">
+            From the world's longest unbroken sands at Cox’s Bazar (120 km) to pure 98% white silica at Whitehaven, our platform connects you to wonders across every continent.
+          </p>
+          <a href="gallery.html" class="btn btn-coral-primary">
+            Explore Photo Showcase <i class="fa-solid fa-images ms-2"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="stat-card">
+                <div class="stat-number">24</div>
+                <div class="stat-label">Curated Destinations</div>
+                <div class="stat-sub">Spanning 16 Countries</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Geographic Zones</div>
+                <div class="stat-sub">North, South, East & West</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Pure Silica White Sand</div>
+                <div class="stat-sub">At Whitehaven Inlet</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card">
+                <div class="stat-number">120 km</div>
+                <div class="stat-label">Longest Natural Sand Shore</div>
+                <div class="stat-sub">At Cox's Bazar Bay</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. CUSTOMER TESTIMONIALS
+       ========================================================================= -->
+  <section class="py-5 bg-white">
+    <div class="container px-lg-5 py-4">
+      <div class="section-header text-center mb-5">
+        <span class="section-kicker">
+          <i class="fa-solid fa-comments"></i> Visitor Voices
+        </span>
+        <h2 class="section-title">What Fellow Travelers Say</h2>
+        <p class="section-desc mx-auto">
+          Hear from coastal explorers who used BeautyOfBeaches to plan their relaxing seaside getaways.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="review-card">
+            <div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="badge bg-soft-peach text-terracotta mb-2 px-2 py-1 small fw-bold">
+                <i class="fa-solid fa-location-dot me-1"></i> Manora Beach, Pakistan
+              </div>
+              <p class="review-comment">"The information on Manora Beach was spot on! The new promenade and lighthouse at sunset with fresh seafood made our weekend unforgettable."</p>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">A</div>
+              <div>
+                <div class="review-author-name">Ali Raza</div>
+                <div class="review-author-loc">Karachi, Pakistan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="review-card">
+            <div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="badge bg-soft-peach text-terracotta mb-2 px-2 py-1 small fw-bold">
+                <i class="fa-solid fa-location-dot me-1"></i> Baía do Sancho, Brazil
+              </div>
+              <p class="review-comment">"The tips regarding advance park permits and ladder access saved our trip. Snorkeling with spinner dolphins was purely magical."</p>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">M</div>
+              <div>
+                <div class="review-author-name">Maria Santos</div>
+                <div class="review-author-loc">São Paulo, Brazil</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="review-card">
+            <div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="badge bg-soft-peach text-terracotta mb-2 px-2 py-1 small fw-bold">
+                <i class="fa-solid fa-location-dot me-1"></i> Maya Bay, Thailand
+              </div>
+              <p class="review-comment">"Loved the warm sunset aesthetic of the site! Clear explanation of swimming restrictions helped us respect the reef ecosystem."</p>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">K</div>
+              <div>
+                <div class="review-author-name">Kenji Takahashi</div>
+                <div class="review-author-loc">Tokyo, Japan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="feedback.html" class="btn btn-coral-outline text-cocoa" style="border-color: var(--coral-primary); color: var(--terracotta);">
+          <i class="fa-solid fa-pen-to-square me-2"></i>Leave Your Review on Our Feedback Page
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. CALL-TO-ACTION BANNER & NEWSLETTER
+       ========================================================================= -->
+  <section class="py-5 bg-warm-cream">
+    <div class="container px-lg-5">
+      <div class="cta-banner text-center text-white p-5">
+        <div class="row justify-content-center position-relative" style="z-index: 2;">
+          <div class="col-lg-8">
+            <span class="badge bg-white text-terracotta px-3 py-2 rounded-pill fw-bold mb-3 text-uppercase">
+              <i class="fa-solid fa-envelope-open-text me-1"></i> Sunset Coastal Dispatch
+            </span>
+            <h2 class="display-6 fw-bold text-white mb-3">Ready to Plan Your Dream Beach Journey?</h2>
+            <p class="lead mb-4 text-white-50">
+              Subscribe to receive weekly curated coastal guides, tidal forecasts, and hidden secret cove recommendations across all four zones.
+            </p>
+
+            <form class="newsletter-form row g-2 justify-content-center">
+              <div class="col-12 col-sm-8 col-md-7">
+                <input type="email" class="form-control form-control-lg bg-white border-0 shadow-sm" placeholder="Enter your email address..." required>
+              </div>
+              <div class="col-12 col-sm-4 col-md-3">
+                <button type="submit" class="btn btn-dark w-100 btn-lg fw-bold shadow-sm" style="background-color: var(--dark-cocoa); border: none;">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <small class="d-block mt-3 text-white-50">Zero spam. Free beach travel guides directly to your inbox.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. BEACH DETAIL MODAL
+       ========================================================================= -->
+  <div class="modal fade" id="beachDetailModal" tabindex="-1" aria-labelledby="modalBeachTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow-lg overflow-hidden">
+        <div class="position-relative">
+          <img id="modalBeachImg" src="" alt="Beach destination" class="w-100" style="max-height: 340px; object-fit: cover;">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3 p-2 bg-white rounded-circle shadow-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 p-md-5 bg-white">
+          <div id="modalBeachLocation" class="text-terracotta fw-bold small mb-1"></div>
+          <h3 id="modalBeachTitle" class="fw-bold text-cocoa mb-3"></h3>
+          <p id="modalBeachDesc" class="text-cocoa-muted mb-4"></p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-4">
+              <div class="p-3 bg-warm-cream rounded-3 border border-light">
+                <small class="text-muted d-block"><i class="fa-solid fa-calendar text-coral me-1"></i> Best Season</small>
+                <strong id="modalBeachBestTime" class="text-cocoa"></strong>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-3 bg-warm-cream rounded-3 border border-light">
+                <small class="text-muted d-block"><i class="fa-solid fa-temperature-half text-coral me-1"></i> Air Weather</small>
+                <strong id="modalBeachWeather" class="text-cocoa"></strong>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-3 bg-warm-cream rounded-3 border border-light">
+                <small class="text-muted d-block"><i class="fa-solid fa-water text-coral me-1"></i> Water Temp</small>
+                <strong id="modalBeachWater" class="text-cocoa"></strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold text-cocoa"><i class="fa-solid fa-person-swimming text-coral me-2"></i>Activities:</h6>
+            <div id="modalBeachActivities" class="d-flex flex-wrap gap-1"></div>
+          </div>
+
+          <div class="mb-3">
+            <h6 class="fw-bold text-cocoa"><i class="fa-solid fa-circle-info text-coral me-2"></i>Safety Advisory:</h6>
+            <div class="alert alert-warning border-0 p-3 small mb-0 rounded-3" id="modalBeachSafety"></div>
+          </div>
+        </div>
+        <div class="modal-footer bg-warm-cream border-top-0 px-4 py-3">
+          <button type="button" class="btn btn-sand" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back To Top Button -->
+  <button id="back-to-top-btn" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- =========================================================================
+       11. CONSISTENT FOOTER
+       ========================================================================= -->
+  <!-- Sunset Banner -->
+  <section class="sunset-banner" style="background-image:url('images/home/sunset-banner.jpg');">
+    <div class="sunset-banner-overlay"></div>
+    <div class="container px-lg-5 position-relative text-center text-white">
+      <span class="section-kicker text-white"><i class="fa-solid fa-sun text-gold"></i> Sunset Moments</span>
+      <h2 class="sunset-banner-title">Every wave tells a new story</h2>
+      <p class="mx-auto" style="max-width:560px;opacity:.95;">Walk barefoot on the sand, watch the golden evening unfold, and plan your next beach getaway.</p>
+      <a href="gallery.html" class="btn btn-light rounded-pill px-4 fw-semibold mt-2"><i class="fa-solid fa-images me-2"></i>Explore the Gallery</a>
+    </div>
+  </section>
+
+  <footer class="bob-footer">
+    <div class="container px-lg-5">
+      <div class="row g-4">
+        <!-- Brand Summary -->
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <a class="bob-logo mb-3 d-inline-flex" href="index.html" aria-label="Beauty Of Beaches - Home">
+            <img src="images/logo.png" alt="Beauty Of Beaches logo" class="bob-logo-img footer-logo">
+          </a>
+          <p class="bob-footer-desc">
+            BeautyOfBeaches is a premier global beach tourism portal dedicated to showcasing the planet's most spectacular shorelines across the North, South, East, and West compass zones.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="bob-footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="queries.html"><i class="fa-solid fa-chevron-right"></i> Queries &amp; FAQs</a></li>
+            <li><a href="feedback.html"><i class="fa-solid fa-chevron-right"></i> Feedback</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+            <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap</a></li>
+          </ul>
+        </div>
+
+        <!-- Beach Zones & Huts -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Explore</h5>
+          <ul class="bob-footer-links">
+            <li><a href="north-beaches.html"><i class="fa-solid fa-compass"></i> North Beaches</a></li>
+            <li><a href="south-beaches.html"><i class="fa-solid fa-sun"></i> South Beaches</a></li>
+            <li><a href="east-beaches.html"><i class="fa-solid fa-tree"></i> East Beaches</a></li>
+            <li><a href="west-beaches.html"><i class="fa-solid fa-water"></i> West Beaches</a></li>
+            <li><a href="old-huts.html"><i class="fa-solid fa-house-chimney"></i> Old Huts</a></li>
+            <li><a href="normal-huts.html"><i class="fa-solid fa-umbrella-beach"></i> Normal Huts</a></li>
+            <li><a href="luxury-huts.html"><i class="fa-solid fa-gem"></i> Luxury Huts</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information (sample details) -->
+        <div class="col-lg-4">
+          <h5>Contact Bureau</h5>
+          <p class="small mb-3 footer-note">Sample inquiry details for demonstration:</p>
+          <div class="footer-contact-row"><i class="fa-solid fa-location-dot"></i><div>Coastal Horizon Tower, Sunset Avenue, Seaside District (Sample Location)</div></div>
+          <div class="footer-contact-row"><i class="fa-solid fa-phone"></i><div>+1 (800) 555-COAST (Sample Helpline)</div></div>
+          <div class="footer-contact-row mb-3"><i class="fa-solid fa-envelope"></i><div>contact@beautyofbeaches.sample</div></div>
+          <a href="contact.html" class="btn btn-sm footer-btn">Send In-Browser Message</a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>&copy; 2026 <strong>BeautyOfBeaches</strong>. All rights reserved.</div>
+        <div class="d-flex flex-wrap gap-3 align-items-center footer-bottom-links">
+          <a href="sitemap.html">Sitemap</a>
+          <a href="queries.html">Travel FAQs</a>
+          <a href="feedback.html">Reviews</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: jQuery, Bootstrap Bundle & Master Script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
